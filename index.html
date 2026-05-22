@@ -2,735 +2,585 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" name="viewport"/>
 <title>Windsor Essex Child/Youth Advocacy Centre</title>
-<meta content="Windsor Essex Child/Youth Advocacy Centre provides a safe, supportive environment for children and youth to disclose abuse and begin their journey to recovery." name="description"/>
+<meta content="Windsor Essex Child/Youth Advocacy Centre provides a safe, coordinated space for children and youth to disclose abuse. Serving Windsor &amp; Essex County, Ontario." name="description"/>
 <meta content="Windsor Essex Child/Youth Advocacy Centre" property="og:title"/>
-<meta content="A safe, child-friendly space where healing begins with a single step." property="og:description"/>
-<meta content="https://images.pexels.com/photos/12105840/pexels-photo-12105840.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" property="og:image"/>
+<meta content="A safe, coordinated space for children and youth to disclose abuse, and a community committed to awareness." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://images.pexels.com/photos/5801242/pexels-photo-5801242.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" property="og:image"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="Windsor Essex Child/Youth Advocacy Centre" name="twitter:title"/>
-<meta content="A safe, child-friendly space where healing begins with a single step." name="twitter:description"/>
-<meta content="https://images.pexels.com/photos/12105840/pexels-photo-12105840.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" name="twitter:image"/>
+<meta content="A safe, coordinated space for children and youth to disclose abuse, and a community committed to awareness." name="twitter:description"/>
+<meta content="https://images.pexels.com/photos/5801242/pexels-photo-5801242.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" name="twitter:image"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&amp;family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&amp;family=Open+Sans:wght@400;600&amp;display=swap" rel="stylesheet"/>
 <style>
-    :root {
-      --primary: #2C5F8A;
-      --secondary: #6B9E6B;
-      --accent: #E8A838;
-      --text: #2C3E50;
-      --background: #F7F5F0;
-      --muted: #E8E3D9;
-      --font-heading: 'Lora', Georgia, serif;
-      --font-body: 'Open Sans', system-ui, sans-serif;
-      --shadow-sm: 0 1px 3px rgba(44,62,80,0.06);
-      --shadow-md: 0 8px 20px rgba(44,62,80,0.08);
-      --radius: 12px;
-    }
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    html {
-      scroll-behavior: smooth;
-    }
-    body {
-      font-family: var(--font-body);
-      color: var(--text);
-      background: var(--background);
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-    }
-    a {
-      color: var(--primary);
-      text-decoration: none;
-    }
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-    
-    .proof-strip {
-      background: var(--primary);
-      color: #fff;
-      font-size: 0.85rem;
-      padding: 8px 0;
-      text-align: center;
-      letter-spacing: 0.02em;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 0.5rem 1.5rem;
-    }
-    .proof-strip a {
-      color: #fff;
-      text-decoration: underline;
-      text-underline-offset: 2px;
-    }
-    .proof-strip span {
-      white-space: nowrap;
-    }
-    
-    .site-header {
-      background: rgba(247,245,240,0.92);
-      backdrop-filter: blur(6px);
-      border-bottom: 1px solid var(--muted);
-      padding: 12px 0;
-      position: sticky;
-      top: 0;
-      z-index: 40;
-    }
-    .header-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 8px 16px;
-    }
-    .site-title {
-      font-family: var(--font-heading);
-      font-weight: 600;
-      font-size: 1.1rem;
-      color: var(--primary);
-      line-height: 1.3;
-      max-width: 280px;
-    }
-    .header-actions {
-      display: flex;
-      gap: 12px;
-      align-items: center;
-    }
-    .header-actions a {
-      font-size: 0.9rem;
-      font-weight: 600;
-      padding: 6px 14px;
-      border-radius: 40px;
-      background: var(--accent);
-      color: #1e2b37;
-      transition: background 0.2s;
-    }
-    .header-actions a:hover {
-      background: #d99a2e;
-    }
-    .header-actions .tel-link {
-      background: transparent;
-      color: var(--primary);
-      padding: 6px 8px;
-      font-weight: 600;
-    }
-    
-    .hero {
-      min-height: 90vh;
-      display: flex;
-      align-items: center;
-      position: relative;
-      background: var(--muted);
-      overflow: hidden;
-    }
-    .hero-bg {
-      position: absolute;
-      inset: 0;
-      background: url('https://images.pexels.com/photos/12105840/pexels-photo-12105840.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat center center / cover;
-      filter: saturate(0.9) brightness(0.85);
-      z-index: 0;
-    }
-    .hero-overlay {
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(ellipse at 30% 40%, rgba(44,95,138,0.25) 0%, rgba(44,95,138,0.55) 100%);
-      z-index: 1;
-    }
-    .hero-content {
-      position: relative;
-      z-index: 2;
-      width: 100%;
-      padding: 100px 20px 80px;
-    }
-    .hero-text {
-      max-width: 620px;
-      margin-left: auto;
-      margin-right: 0;
-      background: rgba(247,245,240,0.7);
-      backdrop-filter: blur(4px);
-      padding: 2rem 2.2rem;
-      border-radius: var(--radius);
-      box-shadow: var(--shadow-md);
-    }
-    .hero-text h1 {
-      font-family: var(--font-heading);
-      font-size: clamp(2.2rem, 8vw, 3.8rem);
-      font-weight: 700;
-      line-height: 1.15;
-      color: var(--primary);
-      margin-bottom: 0.5rem;
-    }
-    .hero-text p {
-      font-size: 1.05rem;
-      margin-bottom: 1.8rem;
-      color: var(--text);
-      max-width: 540px;
-    }
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-    }
-    .btn {
-      display: inline-block;
-      padding: 12px 28px;
-      border-radius: 40px;
-      font-weight: 600;
-      font-size: 0.95rem;
-      transition: all 0.2s;
-      border: none;
-      cursor: pointer;
-      background: var(--primary);
-      color: #fff;
-      box-shadow: var(--shadow-sm);
-    }
-    .btn:hover {
-      background: #1f4a6e;
-      transform: translateY(-1px);
-    }
-    .btn-outline {
-      background: transparent;
-      border: 2px solid var(--primary);
-      color: var(--primary);
-    }
-    .btn-outline:hover {
-      background: var(--primary);
-      color: #fff;
-    }
-    .btn-accent {
-      background: var(--accent);
-      color: #1e2b37;
-    }
-    .btn-accent:hover {
-      background: #d99a2e;
-    }
-    
-    section {
-      padding: 70px 0;
-    }
-    .section-title {
-      font-family: var(--font-heading);
-      font-size: 2rem;
-      font-weight: 600;
-      color: var(--primary);
-      margin-bottom: 1.2rem;
-      line-height: 1.2;
-    }
-    .section-sub {
-      font-size: 1rem;
-      color: #4a5b6b;
-      max-width: 680px;
-      margin-bottom: 2rem;
-    }
-    .bg-muted {
-      background: var(--muted);
-    }
-    .bg-white {
-      background: #fff;
-    }
-    
-    .split-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-      align-items: center;
-    }
-    .split-grid img {
-      border-radius: var(--radius);
-      box-shadow: var(--shadow-md);
-      width: 100%;
-      height: 400px;
-      object-fit: cover;
-    }
-    .split-text {
-      border-left: 4px solid var(--secondary);
-      padding-left: 28px;
-    }
-    .split-text p {
-      margin-bottom: 1rem;
-    }
-    
-    .services-scroll {
-      display: flex;
-      gap: 24px;
-      overflow-x: auto;
-      padding-bottom: 16px;
-      scroll-snap-type: x mandatory;
-      -webkit-overflow-scrolling: touch;
-    }
-    .services-scroll::-webkit-scrollbar {
-      height: 6px;
-      background: var(--muted);
-      border-radius: 10px;
-    }
-    .services-scroll::-webkit-scrollbar-thumb {
-      background: var(--primary);
-      border-radius: 10px;
-    }
-    .service-card {
-      flex: 0 0 280px;
-      scroll-snap-align: start;
-      background: #fff;
-      border-radius: var(--radius);
-      padding: 24px 20px;
-      box-shadow: var(--shadow-sm);
-      border: 1px solid rgba(44,62,80,0.06);
-      transition: box-shadow 0.2s;
-      display: flex;
-      flex-direction: column;
-    }
-    .service-card:hover {
-      box-shadow: var(--shadow-md);
-    }
-    .service-card h3 {
-      font-family: var(--font-heading);
-      font-size: 1.2rem;
-      color: var(--primary);
-      margin-bottom: 8px;
-    }
-    .service-card p {
-      font-size: 0.95rem;
-      color: #3d4e5e;
-      flex: 1;
-    }
-    .service-card .card-img {
-      width: 100%;
-      height: 140px;
-      object-fit: cover;
-      border-radius: 8px;
-      margin-bottom: 14px;
-    }
-    
-    .why-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 30px;
-    }
-    .why-item {
-      background: #fff;
-      padding: 28px 20px;
-      border-radius: var(--radius);
-      box-shadow: var(--shadow-sm);
-      border-top: 4px solid var(--secondary);
-    }
-    .why-item h4 {
-      font-family: var(--font-heading);
-      color: var(--primary);
-      margin-bottom: 6px;
-    }
-    
-    .help-grid {
-      display: grid;
-      grid-template-columns: 1fr 1.2fr 1fr;
-      gap: 24px;
-      align-items: start;
-    }
-    .help-card {
-      background: #fff;
-      padding: 30px 20px;
-      border-radius: var(--radius);
-      box-shadow: var(--shadow-sm);
-      text-align: center;
-      border: 1px solid rgba(44,62,80,0.05);
-    }
-    .help-card.highlight {
-      background: var(--primary);
-      color: #fff;
-      transform: scale(1.02);
-      box-shadow: var(--shadow-md);
-    }
-    .help-card.highlight h4 {
-      color: #fff;
-    }
-    .help-card h4 {
-      font-family: var(--font-heading);
-      color: var(--primary);
-      margin-bottom: 10px;
-      font-size: 1.2rem;
-    }
-    .help-card .icon {
-      font-size: 2.2rem;
-      margin-bottom: 10px;
-      display: block;
-    }
-    .help-card a {
-      display: inline-block;
-      margin-top: 12px;
-      font-weight: 600;
-    }
-    
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-    }
-    .contact-map {
-      border-radius: var(--radius);
-      overflow: hidden;
-      min-height: 300px;
-      background: var(--muted);
-    }
-    .contact-map iframe {
-      width: 100%;
-      height: 100%;
-      min-height: 300px;
-      border: 0;
-    }
-    .contact-form-wrap {
-      background: var(--muted);
-      padding: 32px 28px;
-      border-radius: var(--radius);
-    }
-    .contact-form-wrap form {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-    .contact-form-wrap input,
-    .contact-form-wrap textarea {
-      padding: 12px 16px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      font-family: var(--font-body);
-      font-size: 0.95rem;
-      background: #fff;
-    }
-    .contact-form-wrap textarea {
-      resize: vertical;
-      min-height: 100px;
-    }
-    
-    .gallery-strip {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 12px;
-    }
-    .gallery-strip img {
-      height: 200px;
-      width: 100%;
-      object-fit: cover;
-      border-radius: 8px;
-      box-shadow: var(--shadow-sm);
-    }
-    
-    .site-footer {
-      background: var(--primary);
-      color: #e6edf2;
-      padding: 32px 0;
-      font-size: 0.9rem;
-    }
-    .footer-inner {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 20px;
-    }
-    .footer-inner a {
-      color: #e6edf2;
-      text-decoration: underline;
-      text-underline-offset: 2px;
-    }
-    .footer-credit {
-      font-size: 0.8rem;
-      opacity: 0.8;
-    }
-    
-    .mobile-sticky {
-      display: none;
-      position: fixed;
-      bottom: 20px;
-      left: 20px;
-      right: 20px;
-      z-index: 50;
-      text-align: center;
-    }
-    .mobile-sticky a {
-      display: inline-block;
-      background: var(--accent);
-      color: #1e2b37;
-      padding: 14px 24px;
-      border-radius: 50px;
-      font-weight: 700;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-      width: 100%;
-      max-width: 300px;
-    }
-    
-    @media (max-width: 820px) {
-      .split-grid {
-        grid-template-columns: 1fr;
-      }
-      .split-grid img {
-        height: 260px;
-      }
-      .why-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-      .help-grid {
-        grid-template-columns: 1fr;
-      }
-      .contact-grid {
-        grid-template-columns: 1fr;
-      }
-      .gallery-strip {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      .hero-text {
-        margin-left: 0;
-        padding: 1.5rem;
-      }
-    }
-    @media (max-width: 600px) {
-      .why-grid {
-        grid-template-columns: 1fr;
-      }
-      .gallery-strip {
-        grid-template-columns: 1fr 1fr;
-      }
-      .site-title {
-        font-size: 0.95rem;
-        max-width: 180px;
-      }
-      .header-actions a {
-        font-size: 0.75rem;
-        padding: 4px 10px;
-      }
-      .mobile-sticky {
-        display: block;
-      }
-      .proof-strip {
-        font-size: 0.75rem;
-        padding: 6px 10px;
-      }
-    }
-    @media (min-width: 601px) {
-      .mobile-sticky {
-        display: none !important;
-      }
-    }
-    
-    .steps {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-      margin-top: 20px;
-    }
-    .step {
-      background: #fff;
-      padding: 20px 24px;
-      border-radius: var(--radius);
-      flex: 1 1 180px;
-      box-shadow: var(--shadow-sm);
-      border-left: 4px solid var(--accent);
-    }
-    .step h4 {
-      font-family: var(--font-heading);
-      color: var(--primary);
-      margin-bottom: 4px;
-    }
-    .step p {
-      font-size: 0.9rem;
-    }
-  </style>
+        :root {
+            --primary: #2C5F4F;
+            --secondary: #8B6F47;
+            --accent: #D49A6A;
+            --text: #2D2D2D;
+            --background: #F9F6F0;
+            --muted: #EFEBE3;
+            --heading: 'Merriweather', Georgia, serif;
+            --body: 'Open Sans', system-ui, sans-serif;
+            --gap: 1.5rem;
+            --max-width: 1200px;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            background: var(--background);
+            color: var(--text);
+            font-family: var(--body);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        img { max-width: 100%; height: auto; display: block; }
+        a { color: var(--primary); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .container { max-width: var(--max-width); margin: 0 auto; padding: 0 1.25rem; }
+
+        
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: rgba(249,246,240,0.92);
+            backdrop-filter: blur(6px);
+            border-bottom: 1px solid var(--muted);
+            padding: 0.75rem 0;
+        }
+        .site-header .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .site-identity {
+            font-family: var(--heading);
+            font-weight: 400;
+            font-size: 1.1rem;
+            color: var(--primary);
+            letter-spacing: -0.01em;
+            line-height: 1.3;
+            max-width: 70%;
+        }
+        .site-identity small { font-size: 0.75rem; font-weight: 300; display: block; color: var(--secondary); }
+
+        
+        .proof-strip {
+            background: var(--muted);
+            padding: 0.6rem 0;
+            font-size: 0.85rem;
+            border-bottom: 1px solid rgba(44,95,79,0.08);
+        }
+        .proof-strip .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem 1.5rem;
+            align-items: baseline;
+        }
+        .proof-strip span { color: var(--secondary); }
+        .proof-strip a { font-weight: 600; color: var(--primary); }
+
+        
+        .hero {
+            position: relative;
+            min-height: 85vh;
+            display: flex;
+            align-items: flex-end;
+            background: var(--muted);
+            overflow: hidden;
+        }
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 40% 30%;
+            filter: saturate(0.92) brightness(0.85);
+            transition: filter 0.6s ease;
+        }
+        .hero:hover .hero-bg { filter: saturate(1) brightness(0.9); }
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(44,95,79,0.55) 0%, rgba(139,111,71,0.2) 70%, transparent 100%);
+            pointer-events: none;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            padding: 4rem 0 3rem;
+        }
+        .hero-text-block {
+            background: rgba(249,246,240,0.88);
+            backdrop-filter: blur(2px);
+            padding: 2rem 2rem 2.5rem;
+            max-width: 620px;
+            border-left: 6px solid var(--accent);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+        }
+        .hero-text-block h1 {
+            font-family: var(--heading);
+            font-weight: 300;
+            font-size: 2.6rem;
+            line-height: 1.2;
+            color: var(--primary);
+            letter-spacing: -0.02em;
+        }
+        .hero-text-block p {
+            font-size: 1.05rem;
+            margin: 1rem 0 1.6rem;
+            color: var(--text);
+            max-width: 480px;
+        }
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.7rem 1.6rem;
+            font-family: var(--body);
+            font-weight: 600;
+            font-size: 0.9rem;
+            border: 2px solid var(--primary);
+            background: transparent;
+            color: var(--primary);
+            border-radius: 40px;
+            transition: all 0.2s;
+            cursor: pointer;
+            text-align: center;
+        }
+        .btn-primary {
+            background: var(--primary);
+            color: #fff;
+            border-color: var(--primary);
+        }
+        .btn-primary:hover {
+            background: transparent;
+            color: var(--primary);
+            text-decoration: none;
+        }
+        .btn-outline:hover {
+            background: var(--primary);
+            color: #fff;
+            text-decoration: none;
+        }
+
+        
+        section { padding: 4rem 0; }
+        .section-title {
+            font-family: var(--heading);
+            font-weight: 300;
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.01em;
+            border-left: 4px solid var(--accent);
+            padding-left: 1rem;
+        }
+
+        
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+        .about-image {
+            border-radius: 4px;
+            overflow: hidden;
+            background: var(--muted);
+            aspect-ratio: 4/5;
+            object-fit: cover;
+            width: 100%;
+        }
+        .about-text blockquote {
+            font-family: var(--heading);
+            font-weight: 300;
+            font-size: 1.3rem;
+            line-height: 1.4;
+            color: var(--secondary);
+            border-left: 3px solid var(--accent);
+            padding-left: 1.2rem;
+            margin: 1.5rem 0;
+        }
+        .why-list {
+            list-style: none;
+            margin-top: 1rem;
+        }
+        .why-list li {
+            padding: 0.3rem 0;
+            display: flex;
+            gap: 0.6rem;
+            align-items: baseline;
+        }
+        .why-list li::before {
+            content: "✦";
+            color: var(--accent);
+            font-size: 0.9rem;
+        }
+
+        
+        .services-stagger {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .service-card {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            background: var(--muted);
+            border-radius: 4px;
+            overflow: hidden;
+            transition: box-shadow 0.2s;
+        }
+        .service-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+        .service-card-content {
+            padding: 1.2rem 1.5rem 1.5rem;
+        }
+        .service-card-content h3 {
+            font-family: var(--heading);
+            font-weight: 400;
+            color: var(--primary);
+            font-size: 1.2rem;
+        }
+        .service-card-content p {
+            font-size: 0.95rem;
+            margin-top: 0.4rem;
+            color: #3d3d3d;
+        }
+
+        
+        .timeline-horizontal {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-top: 1rem;
+            position: relative;
+        }
+        .timeline-item {
+            flex: 1 1 180px;
+            background: var(--muted);
+            padding: 1.2rem 1rem;
+            border-radius: 4px;
+            border-left: 4px solid var(--accent);
+        }
+        .timeline-item img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 2px;
+            margin-bottom: 0.6rem;
+        }
+        .timeline-item h4 {
+            font-family: var(--heading);
+            font-weight: 400;
+            font-size: 1rem;
+            color: var(--primary);
+        }
+        .timeline-item p { font-size: 0.85rem; margin-top: 0.3rem; }
+
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.8rem;
+        }
+        .gallery-grid img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 3px;
+            background: var(--muted);
+        }
+        .gallery-grid img:nth-child(3) { height: 260px; }
+        .gallery-grid img:nth-child(4) { height: 180px; }
+
+        
+        .cta-full {
+            background: var(--muted);
+            position: relative;
+            background-image: none;
+            background-size: cover;
+            background-position: center 40%;
+            background-blend-mode: overlay;
+            background-color: rgba(44,95,79,0.5);
+        }
+        .cta-overlay {
+            background: rgba(249,246,240,0.85);
+            backdrop-filter: blur(2px);
+            padding: 3rem 1.5rem;
+            text-align: center;
+        }
+        .cta-overlay h2 {
+            font-family: var(--heading);
+            font-weight: 300;
+            font-size: 2rem;
+            color: var(--primary);
+        }
+        .cta-overlay p { max-width: 500px; margin: 0.8rem auto 1.5rem; }
+        .cta-buttons { display: flex; flex-wrap: wrap; gap: 0.8rem; justify-content: center; }
+
+        
+        .contact-details {
+            background: var(--muted);
+            padding: 2rem;
+            border-radius: 4px;
+            margin-top: 1rem;
+        }
+        .contact-details p { margin: 0.3rem 0; font-size: 0.95rem; }
+        .contact-details strong { color: var(--primary); }
+        .contact-form {
+            margin-top: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+        .contact-form input, .contact-form textarea {
+            border: 1px solid #ccc;
+            padding: 0.7rem 1rem;
+            font-family: var(--body);
+            border-radius: 30px;
+            background: #fff;
+            font-size: 0.9rem;
+        }
+        .contact-form textarea { min-height: 100px; resize: vertical; }
+        .contact-form button { align-self: flex-start; }
+
+        
+        .site-footer {
+            border-top: 1px solid var(--muted);
+            padding: 1.5rem 0;
+            font-size: 0.8rem;
+            color: #5a5a5a;
+        }
+        .site-footer .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 0.5rem;
+        }
+        .footer-attrib a { color: var(--secondary); }
+
+        
+        @media (min-width: 680px) {
+            .about-grid { grid-template-columns: 1fr 1.2fr; }
+            .service-card { grid-template-columns: 1fr 1fr; }
+            .service-card:nth-child(even) img { order: 2; }
+            .gallery-grid { grid-template-columns: 1fr 1fr 1fr; }
+            .gallery-grid img { height: 220px; }
+            .gallery-grid img:nth-child(3) { height: 280px; }
+            .gallery-grid img:nth-child(4) { height: 200px; }
+            .hero-text-block h1 { font-size: 3.2rem; }
+        }
+        @media (max-width: 400px) {
+            .hero-text-block { padding: 1.5rem; }
+            .hero-text-block h1 { font-size: 2rem; }
+            .section-title { font-size: 1.4rem; }
+        }
+        .handprint-icon {
+            display: inline-block;
+            font-size: 1.4rem;
+            margin-right: 0.3rem;
+            opacity: 0.7;
+        }
+        .scroll-reveal { opacity: 0; transform: translateY(12px); transition: opacity 0.6s ease, transform 0.6s ease; }
+        .scroll-reveal.revealed { opacity: 1; transform: translateY(0); }
+    </style>
 </head>
 <body>
-<div class="proof-strip">
-<span>📍 Windsor &amp; Essex County, ON</span>
-<span>📞 <a href="tel:+15199953974">(519) 995-3974</a></span>
-<span>✉️ <a href="mailto:info@wecyac.ca">info@wecyac.ca</a></span>
-<span><a href="#contact">Contact</a></span>
-</div>
 <header class="site-header">
-<div class="container header-inner">
-<div class="site-title">Windsor Essex Child/Youth Advocacy Centre</div>
-<div class="header-actions">
-<a class="tel-link" href="tel:+15199953974">(519) 995-3974</a>
-<a href="mailto:info@wecyac.ca">Email</a>
+<div class="container">
+<div class="site-identity">
+                Windsor Essex Child/Youth Advocacy Centre
+                <small>Windsor · Essex County</small>
 </div>
 </div>
 </header>
-<section class="hero" id="hero">
-<div class="hero-bg"></div>
+<div class="proof-strip">
+<div class="container">
+<span>📍 Windsor &amp; Essex County, Ontario</span>
+<span>🕊️ Child &amp; Youth Advocacy Centre</span>
+<a href="https://wecyac.ca" rel="noopener" target="_blank">🔗 wecyac.ca</a>
+</div>
+</div>
+<section class="hero" id="top">
+<img alt="warm room with soft light" class="hero-bg" height="800" src="https://images.pexels.com/photos/5801242/pexels-photo-5801242.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
 <div class="hero-overlay"></div>
 <div class="hero-content container">
-<div class="hero-text">
-<h1>A Safe Place to Heal</h1>
-<p>Windsor Essex Child/Youth Advocacy Centre provides a safe, supportive environment for children and youth to disclose abuse and begin their journey to recovery.</p>
+<div class="hero-text-block">
+<h1>A Safe Place to Be Heard</h1>
+<p>Windsor Essex Child/Youth Advocacy Centre provides a safe, coordinated space for children and youth to disclose abuse.</p>
 <div class="hero-actions">
-<a class="btn" href="#services">Learn How We Help</a>
-<a class="btn btn-outline" href="#contact">Get Support Now</a>
+<a class="btn btn-primary" href="#about">Read the Summary</a>
+<a class="btn btn-outline" href="https://wecyac.ca" rel="noopener" target="_blank">Check Source Record</a>
 </div>
 </div>
 </div>
 </section>
-<section class="bg-white" id="about">
+<section id="about">
 <div class="container">
-<div class="split-grid">
-<img alt="warm living room with teddy bear" height="800" src="https://images.pexels.com/photos/5998091/pexels-photo-5998091.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
-<div class="split-text">
-<h2 class="section-title">About the Centre</h2>
-<p>Windsor Essex Child/Youth Advocacy Centre (WECYAC) provides a safe, child-friendly location for children and youth to disclose their abuse to a specially trained team of professionals. We are committed to raising public awareness about the existence of child and youth abuse in our community, and to fostering a supportive environment for healing.</p>
-<p>Serving Windsor and Essex County, Ontario.</p>
+<h2 class="section-title">Our Purpose</h2>
+<div class="about-grid">
+<img alt="team meeting around table" class="about-image" height="800" src="https://images.pexels.com/photos/18649994/pexels-photo-18649994.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
+<div class="about-text">
+<p>Windsor Essex Child/Youth Advocacy Centre (WECYAC) provides a safe location for children and youth to disclose their abuse to a specially trained team of professionals. Located in Windsor, Ontario, the centre is committed to raising public awareness regarding the existence of child/youth abuse in our community.</p>
+<blockquote>“A safe, coordinated space for children and youth to disclose abuse, and a community committed to awareness.”</blockquote>
+<ul class="why-list">
+<li>Specially trained team of professionals</li>
+<li>Safe, child-friendly environment</li>
+<li>Coordinated multi-agency approach</li>
+<li>Community-focused awareness efforts</li>
+</ul>
 </div>
 </div>
 </div>
 </section>
-<section class="bg-muted" id="services">
+<section style="background: var(--muted);">
 <div class="container">
-<h2 class="section-title">Program Pathways</h2>
-<p class="section-sub">Four coordinated support paths, each designed to meet children and families where they are.</p>
-<div class="services-scroll">
-<div class="service-card">
-<img alt="team meeting child-friendly" class="card-img" height="800" src="https://images.pexels.com/photos/7648512/pexels-photo-7648512.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
-<h3>Child &amp; Youth Advocacy</h3>
-<p>A coordinated team of professionals provides a safe space for children and youth to disclose abuse and receive support.</p>
+<h2 class="section-title">How We Help</h2>
+<div class="services-stagger">
+<div class="service-card scroll-reveal">
+<img alt="counseling session" height="800" src="https://images.pexels.com/photos/36729613/pexels-photo-36729613.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
+<div class="service-card-content">
+<h3>Disclosure Support</h3>
+<p>A safe location for children and youth to disclose abuse to a specially trained team.</p>
 </div>
-<div class="service-card">
-<img alt="community circle" class="card-img" height="800" src="https://images.pexels.com/photos/7579304/pexels-photo-7579304.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
+</div>
+<div class="service-card scroll-reveal">
+<img alt="professionals in circle" height="800" src="https://images.pexels.com/photos/5710984/pexels-photo-5710984.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
+<div class="service-card-content">
+<h3>Coordinated Response</h3>
+<p>Professionals from multiple agencies work together to support each case.</p>
+</div>
+</div>
+<div class="service-card scroll-reveal">
+<img alt="community rally" height="800" src="https://images.pexels.com/photos/6257770/pexels-photo-6257770.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
+<div class="service-card-content">
 <h3>Community Awareness</h3>
-<p>We raise public awareness about the existence of child and youth abuse in our community through education and outreach.</p>
+<p>Raising public awareness about the existence of child/youth abuse in our community.</p>
 </div>
-<div class="service-card">
-<img alt="volunteers writing" class="card-img" height="800" src="https://images.pexels.com/photos/1725147/pexels-photo-1725147.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
-<h3>Volunteer Opportunities</h3>
-<p>Join our team of trained volunteers to help create a safe, supportive environment for children and families.</p>
 </div>
-<div class="service-card">
-<img alt="supportive hands" class="card-img" height="800" src="https://images.pexels.com/photos/11966989/pexels-photo-11966989.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
-<h3>Donate to Support</h3>
-<p>Your donation helps us continue providing critical services and resources to children and youth in need.</p>
+<div class="service-card scroll-reveal">
+<img alt="hand holding child hand" height="800" src="https://images.pexels.com/photos/13821255/pexels-photo-13821255.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
+<div class="service-card-content">
+<h3>How to Help</h3>
+<p>Learn how you can support the centre’s mission and the children it serves.</p>
+</div>
 </div>
 </div>
 </div>
 </section>
-<section class="bg-white" id="why">
+<section>
 <div class="container">
-<h2 class="section-title">Why Families Turn to Us</h2>
-<div class="why-grid">
-<div class="why-item">
-<h4>Specially trained team</h4>
-<p>Every professional works with a deep understanding of child development and trauma-informed care.</p>
+<h2 class="section-title">Support Paths</h2>
+<div class="timeline-horizontal">
+<div class="timeline-item scroll-reveal">
+<img alt="child hand" height="800" src="https://images.pexels.com/photos/8363019/pexels-photo-8363019.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
+<h4>First Contact</h4>
+<p>Reach out via phone or email. A trained coordinator responds.</p>
 </div>
-<div class="why-item">
-<h4>Safe, child-friendly environment</h4>
-<p>Our space is designed to feel warm, secure, and welcoming — never clinical or intimidating.</p>
+<div class="timeline-item scroll-reveal">
+<img alt="counselor" height="800" src="https://images.pexels.com/photos/6994869/pexels-photo-6994869.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
+<h4>Safe Disclosure</h4>
+<p>Child or youth meets with the team in a warm, private space.</p>
 </div>
-<div class="why-item">
-<h4>Community-focused awareness</h4>
-<p>We work directly with local partners to build a network of prevention and support across Windsor &amp; Essex County.</p>
+<div class="timeline-item scroll-reveal">
+<img alt="team" height="800" src="https://images.pexels.com/photos/16934314/pexels-photo-16934314.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
+<h4>Coordinated Care</h4>
+<p>Multi-agency professionals align to support the child and family.</p>
+</div>
+<div class="timeline-item scroll-reveal">
+<img alt="community" height="800" src="https://images.pexels.com/photos/5516092/pexels-photo-5516092.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
+<h4>Community Follow-up</h4>
+<p>Ongoing awareness and connection to local resources.</p>
 </div>
 </div>
 </div>
 </section>
-<section class="bg-muted" id="help">
+<section style="background: var(--muted);">
 <div class="container">
-<h2 class="section-title">How to Help</h2>
-<div class="help-grid">
-<div class="help-card">
-<span class="icon">🤝</span>
-<h4>Volunteer</h4>
-<p>Give your time and skills to support children and families. Training provided.</p>
-<a href="mailto:info@wecyac.ca?subject=Volunteer%20inquiry">Email us</a>
-</div>
-<div class="help-card highlight">
-<span class="icon">❤️</span>
-<h4>Donate</h4>
-<p>Every contribution helps us maintain a safe, healing space for children and youth.</p>
-<a href="mailto:info@wecyac.ca?subject=Donation%20inquiry" style="color:#fff;text-decoration:underline;">Make a gift</a>
-</div>
-<div class="help-card">
-<span class="icon">📞</span>
-<h4>Contact</h4>
-<p>Have questions? Call or email — we’re here to listen and guide you.</p>
-<a href="tel:+15199953974">(519) 995-3974</a>
-</div>
+<h2 class="section-title">Inside the Centre</h2>
+<div class="gallery-grid">
+
+
+
+
 </div>
 </div>
 </section>
-<section class="bg-white">
-<div class="container">
-<h2 class="section-title">What Happens Next</h2>
-<p class="section-sub">Reaching out is the first step. Here’s what you can expect.</p>
-<div class="steps">
-<div class="step">
-<h4>1. Call or email</h4>
-<p>Contact us directly. No pressure — just a conversation.</p>
-</div>
-<div class="step">
-<h4>2. Share your reason</h4>
-<p>Tell us why you’re reaching out: programs, donations, volunteering, or general questions.</p>
-</div>
-<div class="step">
-<h4>3. Confirm next step</h4>
-<p>We’ll confirm the best path forward — a tour, a call with a coordinator, or resources.</p>
-</div>
+<section class="cta-full">
+<div class="cta-overlay">
+<h2>Get Involved</h2>
+<p>Your awareness and support help keep our community safe. Reach out to learn more about our work.</p>
+<div class="cta-buttons">
+<a class="btn btn-primary" href="#contact">Contact the Centre</a>
+<a class="btn btn-outline" href="https://wecyac.ca" rel="noopener" target="_blank">Visit wecyac.ca</a>
 </div>
 </div>
 </section>
-<section class="bg-muted">
-<div class="container">
-<h2 class="section-title">Scenes from Our Community</h2>
-<div class="gallery-strip">
-<img alt="tree-lined path" height="800" src="https://images.pexels.com/photos/12695321/pexels-photo-12695321.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
-<img alt="colorful mural" height="800" src="https://images.pexels.com/photos/36675511/pexels-photo-36675511.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
-<img alt="volunteer reading" height="800" src="https://images.pexels.com/photos/8342284/pexels-photo-8342284.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
-<img alt="family walking" height="800" src="https://images.pexels.com/photos/32147474/pexels-photo-32147474.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
-</div>
-</div>
-</section>
-<section class="bg-white" id="contact">
+<section id="contact">
 <div class="container">
 <h2 class="section-title">Contact &amp; Location</h2>
-<div class="contact-grid">
-<div class="contact-map">
-<iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2952.5!2d-83.045!3d42.317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDLCsDE5JzAxLjIiTiA4M8KwMDInNDIuMCJX!5e0!3m2!1sen!2sca!4v1680000000000"></iframe>
-</div>
-<div class="contact-form-wrap">
-<form action="mailto:info@wecyac.ca" enctype="text/plain" method="post">
+<div class="contact-details">
+<p><strong>Windsor Essex Child/Youth Advocacy Centre</strong></p>
+<p>📍 F3011-2000 TALBOT RD W BOX 12 CENTRE FOR APPL. HEALTH SCI.<br/>WINDSOR, ON</p>
+<p>📞 <a href="tel:+15199953974">(519) 995-3974</a></p>
+<p>✉️ <a href="mailto:info@wecyac.ca">info@wecyac.ca</a></p>
+<p>Serving Windsor &amp; Essex County, Ontario.</p>
+<form action="mailto:info@wecyac.ca" class="contact-form" enctype="text/plain" method="post">
 <input name="name" placeholder="Your name" required="" type="text"/>
-<input name="phone" placeholder="Phone (optional)" type="tel"/>
-<textarea name="message" placeholder="How can we help?" required=""></textarea>
-<button class="btn btn-accent" type="submit">Send message</button>
+<input name="subject" placeholder="Subject (e.g. disclosure support, awareness)" required="" type="text"/>
+<textarea name="message" placeholder="How can we help?"></textarea>
+<button class="btn btn-primary" type="submit">Send message</button>
 </form>
-<p style="margin-top:16px;font-size:0.9rem;">Or call <a href="tel:+15199953974">(519) 995-3974</a></p>
-</div>
 </div>
 </div>
 </section>
 <footer class="site-footer">
-<div class="container footer-inner">
-<div>
-<strong>Windsor Essex Child/Youth Advocacy Centre</strong><br/>
-      F3011-2000 TALBOT RD W BOX 12<br/>
-      CENTRE FOR APPL. HEALTH SCI.<br/>
-      WINDSOR, ON<br/>
-<a href="tel:+15199953974">(519) 995-3974</a> · <a href="mailto:info@wecyac.ca">info@wecyac.ca</a>
-</div>
-<div class="footer-credit">
-<p>Photos: <a href="https://www.pexels.com/photo/boy-wearing-a-gray-jacket-sitting-on-wooden-bench-12105840/" rel="noopener" target="_blank">Vladyslav Huivyk</a>, <a href="https://www.pexels.com/photo/teddy-bear-on-white-sofa-5998091/" rel="noopener" target="_blank">Max Vakhtbovych</a>, <a href="https://www.pexels.com/photo/colleagues-in-the-office-7648512/" rel="noopener" target="_blank">RDNE Stock project</a>, <a href="https://www.pexels.com/photo/high-angle-shot-of-people-holding-each-other-s-hands-7579304/" rel="noopener" target="_blank">AI25.Studio</a>, <a href="https://www.pexels.com/photo/people-writing-notes-1725147/" rel="noopener" target="_blank">Pragyan Bezbaruah</a>, <a href="https://www.pexels.com/photo/hands-touching-with-fingers-11966989/" rel="noopener" target="_blank">Максим</a>, <a href="https://www.pexels.com/photo/brown-pathway-between-green-trees-12695321/" rel="noopener" target="_blank">Eugene Shirokov</a>, <a href="https://www.pexels.com/photo/colorful-mural-in-a-sunny-mexican-courtyard-36675511/" rel="noopener" target="_blank">Raul Amado Arias Ortiz</a>, <a href="https://www.pexels.com/photo/boy-in-a-sweater-reading-8342284/" rel="noopener" target="_blank">Mikhail Nilov</a>, <a href="https://www.pexels.com/photo/family-walking-together-on-rural-country-road-32147474/" rel="noopener" target="_blank">Angela Schafer</a> (Pexels)</p>
-<p>© <span id="year"></span> Windsor Essex Child/Youth Advocacy Centre. All rights reserved.</p>
-</div>
+<div class="container">
+<span>© <span id="year"></span> Windsor Essex Child/Youth Advocacy Centre</span>
+<span class="footer-attrib">
+                Photos: 
+                <a href="https://www.pexels.com/photo/girl-lying-on-bed-throwing-her-teddy-bear-in-the-air-5801242/" target="_blank">cottonbro</a>, 
+                <a href="https://www.pexels.com/photo/women-with-pens-working-together-18649994/" target="_blank">Weavehall</a>, 
+                <a href="https://www.pexels.com/photo/teen-counseling-session-in-modern-office-36729613/" target="_blank">V. Gariev</a>,
+                <a href="https://www.pexels.com/photo/people-talking-together-5710984/" target="_blank">Tima Miroshnichenko</a>,
+                <a href="https://www.pexels.com/photo/photo-of-a-child-holding-her-parent-s-hand-13821255/" target="_blank">Rene Terp</a>,
+                <a href="https://www.pexels.com/photo/people-in-a-rally-6257770/" target="_blank">RDNE</a>,
+                <a href="https://www.pexels.com/photo/colorful-poster-hanging-on-the-wall-8363019/" target="_blank">RDNE</a>,
+                <a href="https://www.pexels.com/photo/people-sorting-clothes-6994869/" target="_blank">J. Cameron</a>,
+                <a href="https://www.pexels.com/photo/woman-embracing-man-at-garden-party-16934314/" target="_blank">S. Peter</a>,
+                <a href="https://www.pexels.com/photo/teddy-bear-placed-on-wooden-shelf-with-clothes-5516092/" target="_blank">Erik Mclean</a>
+</span>
 </div>
 </footer>
-<div class="mobile-sticky">
-<a href="tel:+15199953974">Call (519) 995-3974</a>
-</div>
 <script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
+        // dynamic year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // scroll reveal
+        const revealElements = document.querySelectorAll('.scroll-reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                }
+            });
+        }, { threshold: 0.2 });
+        revealElements.forEach(el => observer.observe(el));
+    </script>
 </body>
 </html>
